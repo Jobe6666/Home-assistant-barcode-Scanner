@@ -141,6 +141,7 @@ interval:
 ## 6. Home Assistant Automation
 
 This automation triggers whenever the "Last Scanned Barcode" sensor changes, looks up the barcode against a free online product database (UPCitemdb first, falling back to Open Food Facts for grocery items it misses), and adds the resulting product name to the shopping list.
+Please note that the rest command needs to be added to your configuration.yaml file and a full system reboot needs to be performed. The automation YAML can be run as automation by creating a new automation then selecting edit in YAML and pasting the code. Please update entities to ones that match your specific set up.
 
 ```yaml
 rest_command:
